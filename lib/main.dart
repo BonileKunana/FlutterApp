@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/Search_page.dart';
 import 'package:flutter_application_2/home_page.dart';
 import 'package:flutter_application_2/notification_page.dart';
 import 'package:flutter_application_2/profile_page.dart';
@@ -37,6 +38,7 @@ class _RootPageState extends State<RootPage> {
     HomePage(),
     ProfilePage(),
     NotificationPage(),
+    SearchPage(),
   ];
 
   @override

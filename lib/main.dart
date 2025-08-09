@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/home_page.dart';
+import 'package:flutter_application_2/notification_page.dart';
 import 'package:flutter_application_2/profile_page.dart';
 
 void main() {
@@ -34,7 +35,8 @@ class _RootPageState extends State<RootPage> {
   int currentPageIndex = 0;
   List<Widget> pages =  [
     HomePage(),
-    ProfilePage()
+    ProfilePage(),
+    NotificationPage(),
   ];
 
   @override
@@ -55,8 +57,9 @@ class _RootPageState extends State<RootPage> {
     bottomNavigationBar: NavigationBar(destinations: const[
       NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
       NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
-      NavigationDestination(icon: Icon(Icons.search), label: 'Search'),
       NavigationDestination(icon: Icon(Icons.notifications), label: 'Notifications'),
+      NavigationDestination(icon: Icon(Icons.search), label: 'Search'),
+      
       
     ],
     onDestinationSelected: (int index){
